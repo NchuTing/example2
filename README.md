@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+该React教学示例《XXOO五子棋》是苏州想说科技 孙峰 精心创作，帮助大家在趣味玩乐的过程中领略React在处理复杂业务时的魅力和优势
+
+特点：
+
+1:可以任意设置棋盘大小，可以任意下三子棋、四子棋、五子棋。。。n子棋
+2:全新的判断输赢的算法
+
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 

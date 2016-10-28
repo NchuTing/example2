@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './App.css';
+import logo from '../public/light_logo.png'
 
 var myLen=10 //棋盘长宽
 var typeLen=5 //5子棋
@@ -91,6 +92,18 @@ class Game extends React.Component {
 
     return (
       <div className="container" >
+        <h3 className="text-center">苏州想说信息科技 孙峰精心创作</h3>
+        <h5 className="text-center">帮助大家在趣味玩乐的过程中领略React在处理复杂业务时的魅力和优势</h5>
+        <div className="col-md-4 col-md-offset-4">
+          <h6 className="text-center bg-primary">
+              <a   href="http://www.qcloud.com ">
+                <img src={logo}  alt="" />
+              </a>
+          </h6>
+        </div>
+      
+           
+          
         <div className="row" style={{marginTop:"100px"}}>
            <div className="col-md-9 col-md-offset-3">
             <div className="game">
