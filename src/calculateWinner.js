@@ -20,12 +20,7 @@ function calculateWinner(squares,len,typeLen) {
           
 
           if(isWin&&isWin1) return mySquares[i][j]
-          // if(mySquares[i][j]&&mySquares[i][j+1]&&mySquares[i][j+2]
-          //   &&mySquares[i][j]===mySquares[i][j+1]
-          //   &&mySquares[i][j]===mySquares[i][j+2])
-          // {
-          //     return mySquares[i][j]
-          // }
+       
         }
         if(i+typeLen<=len){
 
@@ -33,12 +28,7 @@ function calculateWinner(squares,len,typeLen) {
           isWin1=typeLen1.every((value,index)=>mySquares[i][j]===mySquares[i+index][j])
           if(isWin&&isWin1) return mySquares[i][j]
 
-          // if(mySquares[i][j]&&mySquares[i+1][j]&&mySquares[i+2][j]
-          //   &&mySquares[i][j]===mySquares[i+1][j]
-          //   &&mySquares[i][j]===mySquares[i+2][j]
-          //   ){
-          //     return mySquares[i][j]
-          // }
+    
         }
         if(i+typeLen<=len&&j+typeLen<=len){
 
@@ -46,26 +36,16 @@ function calculateWinner(squares,len,typeLen) {
           isWin1=typeLen1.every((value,index)=>mySquares[i][j]===mySquares[i+index][j+index])
           if(isWin&&isWin1) return mySquares[i][j]
 
-          // if(mySquares[i][j]&&mySquares[i+1][j+1]&&mySquares[i+2][j+2]
-          //   &&mySquares[i][j]===mySquares[i+1][j+1]
-          //   &&mySquares[i][j]===mySquares[i+2][j+2]
-          //   ){
-          //     return mySquares[i][j]
-          // }
+    
         }
 
-        if(i-typeLen>=0&&j-typeLen>=0){
+        if(i+typeLen<=len&&j-typeLen>=0){
 
-          isWin=typeLen1.every((value,index)=>mySquares[i-index][j+index])
-          isWin1=typeLen1.every((value,index)=>mySquares[i][j]===mySquares[i-index][j+index])
+          isWin=typeLen1.every((value,index)=>mySquares[i+index][j-index])
+          isWin1=typeLen1.every((value,index)=>mySquares[i][j]===mySquares[i+index][j-index])
           if(isWin&&isWin1) return mySquares[i][j]
-
-          // if(mySquares[i][j]&&mySquares[i-1][j+1]&&mySquares[i-2][j+2]
-          //   &&mySquares[i][j]===mySquares[i-1][j-1]
-          //   &&mySquares[i][j]===mySquares[i-2][j-2]
-          //   ){
-          //     return mySquares[i][j]
-          // }
+           console.log(isWin,isWin1,""); 
+         
         }
         
      }
