@@ -14,11 +14,10 @@ function calculateWinner(squares,len,typeLen) {
      for(var j=0;j<len;j++){
 
         if(j+typeLen<=len){
-
+          
           isWin=typeLen1.every((value,index)=>mySquares[i][j+index])
           isWin1=typeLen1.every((value,index)=>mySquares[i][j]===mySquares[i][j+index])
           
-
           if(isWin&&isWin1) return mySquares[i][j]
        
         }
